@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Facade;
 /**
  * @method static string encrypt(string $value)
  * @method static string decrypt(string $value)
+ *
  * @see \FredBradley\GoogleStorageUserPhotosEncrypter\GoogleStorageUserPhotosEncrypter
  */
 class GoogleStorageUserPhotosEncrypter extends Facade
