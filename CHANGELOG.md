@@ -2,6 +2,10 @@
 
 All notable changes to `google-storage-user-photos-encrypter` will be documented in this file.
 
+## 1.0.1 - 2025-10-25
+
+**Full Changelog**: https://github.com/fredbradley/google-storage-user-photos-encrypter/compare/1.0.0...1.0.1
+
 ## Version 1 - 2025-10-25
 
 ### What's Changed
