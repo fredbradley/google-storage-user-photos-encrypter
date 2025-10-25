@@ -1,6 +1,6 @@
 {
     "name": "fredbradley/google-storage-user-photos-encrypter",
-    "description": "This is my package google-storage-user-photos-encrypter",
+    "description": "Customer Encrypter for user photos stored in Google Storage for Laravel applications.",
     "keywords": [
         "Fred Bradley",
         "laravel",
@@ -11,7 +11,7 @@
     "authors": [
         {
             "name": "Fred Bradley",
-            "email": "hello@fredbradley.co.uk",
+            "email": "code@fredbradley.co.uk",
             "role": "Developer"
         }
     ],
