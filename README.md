@@ -1,4 +1,4 @@
-# This is my package google-storage-user-photos-encrypter
+# Custom Encrypter
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/fredbradley/google-storage-user-photos-encrypter.svg?style=flat-square)](https://packagist.org/packages/fredbradley/google-storage-user-photos-encrypter)
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/fredbradley/google-storage-user-photos-encrypter/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/fredbradley/google-storage-user-photos-encrypter/actions?query=workflow%3Arun-tests+branch%3Amain)
