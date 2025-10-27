@@ -1,4 +1,16 @@
 <?php
+it('knows if it is active or not', function () {
+    config()->set('google-storage-user-photos-encrypter.key', random_bytes(32));
+
+    config()->set('google-storage-user-photos-encrypter.status', null);
+    $encrypter = app(\FredBradley\GoogleStorageUserPhotosEncrypter\GoogleStorageUserPhotosEncrypter::class);
+    expect($encrypter->active())->toBeFalse();
+
+    config()->set('google-storage-user-photos-encrypter.status', 'enabled');
+    $encrypter = app(\FredBradley\GoogleStorageUserPhotosEncrypter\GoogleStorageUserPhotosEncrypter::class);
+    expect($encrypter->active())->toBeTrue();
+});
+
 
 it('can encrypt and decrypt using facade', function () {
     config()->set('google-storage-user-photos-encrypter.key', random_bytes(32));

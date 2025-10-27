@@ -3,6 +3,8 @@
 // config for FredBradley/GoogleStorageUserPhotosEncrypter
 return [
 
+    'status' => env('USER_PHOTOS_ENCRYPTER_STATUS', null),
+
     /*
     |--------------------------------------------------------------------------
     | Encryption Key

@@ -30,6 +30,11 @@ USER_PHOTOS_ENCRYPTION_CIPHER=AES-256-CBC
 ## Usage
 ### As a Facade:
 ```php
+// A check to see whether encrypter status is on. (Just add `USER_PHOTOS_ENCRYPTION_STATUS=on` to your .env to enable it)
+if (\FredBradley\GoogleStorageUserPhotosEncrypter\Facades\GoogleStorageUserPhotosEncrypter::active()) {
+// returns a bool 
+}
+
 // Encrypt a value
 $encryptedString = \FredBradley\GoogleStorageUserPhotosEncrypter\Facades\GoogleStorageUserPhotosEncrypter::encrypt($string);
 
@@ -40,11 +45,18 @@ $string = \FredBradley\GoogleStorageUserPhotosEncrypter\Facades\GoogleStorageUse
 ```php
 public function handle(\FredBradley\GoogleStorageUserPhotosEncrypter\GoogleStorageUserPhotosEncrypter $encrypter)
 {
-    // Encrypt a value
-    $encryptedString = $encrypter->encrypt($string);
+    $string = "test string";
+    
+    if ($encrypter::active()) {
+       
+        // Encrypt a value
+        $encryptedString = $encrypter->encrypt($string);
 
-    // Decrypt a value  
-    $string = $encryptedString->decrypt($encryptedString);
+        // Decrypt a value  
+        $string = $encrypter->decrypt($encryptedString);
+    }
+    
+    return $string;
 }
 ```
 
